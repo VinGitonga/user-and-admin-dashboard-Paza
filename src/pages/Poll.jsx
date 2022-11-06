@@ -1,43 +1,36 @@
-import React from 'react'
+import React from "react";
 import Header from "../components/Header";
-import PollTemplate from '../components/poll/PollTemplate';
-
+import PollItem from "../components/poll/PollItem";
+import PollTemplate from "../components/poll/PollTemplate";
 
 const Poll = () => {
-
     const polls = [
         {
-            title: 'Do you get water?'
-        }, 
+            title: "Do you get water?",
+        },
         {
-            title: 'Is power reliable?'
-        }, 
+            title: "Is power reliable?",
+        },
         {
-            title: 'Are the road systems ok?'
-        }, 
+            title: "Are the road systems ok?",
+        },
         {
-            title: 'Is Ruto good?'
-        }, 
+            title: "Is Ruto good?",
+        },
         {
-            title: 'Should the construction continue?'
-        }
-    ]
+            title: "Should the construction continue?",
+        },
+    ];
     return (
         <div className="m-2 md:m-10 p-2 md:p-10 bg-white">
-        <Header title="Poll" category=""/>
-        <div className='flex flex-row gap-1 flex-wrap'>
-            {
-                polls.map((poll) => {
-                    return <PollTemplate content={poll}/>
-                })
-            }
-
+            <Header title="Poll" category="" />
+            <div className="flex flex-row flex-wrap space-x-4 gap-2">
+                {polls.map((item, i) => (
+                    <PollItem key={i} text={item.title} />
+                ))}
+            </div>
         </div>
+    );
+};
 
-        
-            
-        </div>
-    )
-}
-
-export default Poll
+export default Poll;
