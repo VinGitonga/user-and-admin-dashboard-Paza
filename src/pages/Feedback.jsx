@@ -16,44 +16,44 @@ const Feedback = () => {
 const data = [
   {
     name: "Water",
-    uv: 4000,
-    pv: 2400,
+    yes: 4000,
+    no: 2400,
     amt: 2400
   },
   {
     name: "Security",
-    uv: 3000,
-    pv: 1398,
+    yes: 3000,
+    no: 1398,
     amt: 2210
   },
   {
     name: "Education",
-    uv: 2000,
-    pv: 9800,
+    yes: 2000,
+    no: 9800,
     amt: 2290
   },
   {
     name: "Sports",
-    uv: 2780,
-    pv: 3908,
+    yes: 2780,
+    no: 3908,
     amt: 2000
   },
   {
     name: "Entertainment",
-    uv: 1890,
-    pv: 4800,
+    yes: 1890,
+    no: 4800,
     amt: 2181
   },
   {
     name: "Health",
-    uv: 2390,
-    pv: 3800,
+    yes: 2390,
+    no: 3800,
     amt: 2500
   },
   {
     name: "Agriculture",
-    uv: 3490,
-    pv: 4300,
+    yes: 3490,
+    no: 4300,
     amt: 2100
   }
 ];
@@ -82,11 +82,11 @@ const data = [
       <Legend />
       <Line
         type="monotone"
-        dataKey="pv"
+        dataKey="no"
         stroke="#EF1724"
         activeDot={{ r: 8 }}
       />
-      <Line type="monotone" dataKey="uv" stroke="#85C441" />
+      <Line type="monotone" dataKey="yes" stroke="#85C441" />
     </LineChart>
       
     </div>

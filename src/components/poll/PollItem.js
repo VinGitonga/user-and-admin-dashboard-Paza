@@ -1,9 +1,9 @@
 const PollItem = ({ text }) => {
     const handleBtn = (text) => alert(`You voted ${text}`)
     return (
-        <div className="w-2/5 bg-white rounded-lg border shadow-md mb-4">
+        <div className="w-3/5 bg-white rounded-lg border shadow-md mb-4">
             <div className="p-4 bg-white rounded-lg md:p-8">
-                <p className="mb-3 text-gray-500 text-center">
+                <p className="mb-5 text-gray-500">
                    {text}
                 </p>
                 <div className="flex items-center justify-around">
